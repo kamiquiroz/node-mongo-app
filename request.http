@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Lucia Fernandez",
+    "age": 26,
+    "email": "luciafer@mail.com"
+}
+
+###
+GET http://localhost:3000/api/users/61b29f0c30baf7e859c83a20 HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###
+
+PUT http://localhost:3000/api/users/61b2a50d3b945eaddad394cd HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Marco Polo Valencia",
+    "age": 98,
+    "email": "marcopolo@mail.com"
+}
+
+###
+DELETE http://localhost:3000/api/users/61b2a50d3b945eaddad394cd
