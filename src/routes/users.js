@@ -5,6 +5,10 @@ const userSchema = require("../models/user");
 //     resp.json( {message: "Get All users"});
 // });
 
+const cors = require('cors');
+
+
+
 router.get('/users',(req,resp) => {
     userSchema.find()
     .then((data) => {
